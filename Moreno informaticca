@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moreno Informática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Moreno Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Bem-vindo à Moreno Informática</h2>
+            <p>Sua loja de confiança para hardware de qualidade</p>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Placa de Vídeo</h3>
+                <p>Modelos modernos com alta performance</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>Processadores</h3>
+                <p>Os melhores processadores do mercado</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>Memória RAM</h3>
+                <p>Velocidade e eficiência garantida</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+               
+                <h3>HD</h3>
+                <p>Armazenamento confiável para seus dados</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>SSD</h3>
+                <p>Velocidade de leitura e escrita incomparável</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+               
+                <h3>Placa Mãe</h3>
+                <p>Conectividade e expansão sem limites</p>
+                <button>Comprar</button>
+            </div>
+           <div class="produto">
+               
+                <h3>Coolers</h3>
+                <p>Refrigeramento de qualidade e de alta performance</p>
+                <button>Comprar</button>
+            </div>
+          <div class="produto">
+               
+                <h3>Gabinetes</h3>
+                <p>Os mais resistentes gabinetes do mercado</p>
+                <button>Comprar</button>
+            </div>
+          <div class="produto">
+               
+                <h3>Consoles</h3>
+                <p>Consoles playstation <br>e Xbox</p>
+                <button>Comprar</button>
+          </div>
+           
+      <div class="produto">
+                <h3>Moreno Eletronics</h3>
+                <p>Nossa assistência técnica especializada</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moreno Informática - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#produtos {
+    padding: 2rem;
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #555;
+}
+
+#contato {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#contato button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #777;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
