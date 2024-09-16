@@ -8,113 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Moreno Informática</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <div class="banner">
-            <h2>Bem-vindo à Moreno Informática</h2>
-            <p>Sua loja de confiança para hardware de qualidade</p>
-        </div>
-    </section>
-
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produtos-grid">
-            <div class="produto">
-                <h3>Placa de Vídeo</h3>
-                <p>Modelos modernos com alta performance</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                
-                <h3>Processadores</h3>
-                <p>Os melhores processadores do mercado</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                
-                <h3>Memória RAM</h3>
-                <p>Velocidade e eficiência garantida</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-               
-                <h3>HD</h3>
-                <p>Armazenamento confiável para seus dados</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                
-                <h3>SSD</h3>
-                <p>Velocidade de leitura e escrita incomparável</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-               
-                <h3>Placa Mãe</h3>
-                <p>Conectividade e expansão sem limites</p>
-                <button>Comprar</button>
-            </div>
-           <div class="produto">
-               
-                <h3>Coolers</h3>
-                <p>Refrigeramento de qualidade e de alta performance</p>
-                <button>Comprar</button>
-            </div>
-          <div class="produto">
-               
-                <h3>Gabinetes</h3>
-                <p>Os mais resistentes gabinetes do mercado</p>
-                <button>Comprar</button>
-            </div>
-          <div class="produto">
-               
-                <h3>Consoles</h3>
-                <p>Consoles playstation <br>e Xbox</p>
-                <button>Comprar</button>
-          </div>
-           
-      <div class="produto">
-                <h3>Moreno Eletronics</h3>
-                <p>Nossa assistência técnica especializada</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Moreno Informática - Todos os direitos reservados</p>
-    </footer>
-</body>
-</html>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+	<style>
+	<style type="text/css">
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -263,3 +158,104 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+</style>
+        <div class="logo">
+            <h1>Moreno Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Bem-vindo à Moreno Informática</h2>
+            <p>Sua loja de confiança para hardware de qualidade</p>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Placa de Vídeo</h3>
+                <p>Modelos modernos com alta performance</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>Processadores</h3>
+                <p>Os melhores processadores do mercado</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>Memória RAM</h3>
+                <p>Velocidade e eficiência garantida</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+               
+                <h3>HD</h3>
+                <p>Armazenamento confiável para seus dados</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                
+                <h3>SSD</h3>
+                <p>Velocidade de leitura e escrita incomparável</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+               
+                <h3>Placa Mãe</h3>
+                <p>Conectividade e expansão sem limites</p>
+                <button>Comprar</button>
+            </div>
+           <div class="produto">
+               
+                <h3>Coolers</h3>
+                <p>Refrigeramento de qualidade e de alta performance</p>
+                <button>Comprar</button>
+            </div>
+          <div class="produto">
+               
+                <h3>Gabinetes</h3>
+                <p>Os mais resistentes gabinetes do mercado</p>
+                <button>Comprar</button>
+            </div>
+          <div class="produto">
+               
+                <h3>Consoles</h3>
+                <p>Consoles playstation <br>e Xbox</p>
+                <button>Comprar</button>
+          </div>
+           
+      <div class="produto">
+                <h3>Moreno Eletronics</h3>
+                <p>Nossa assistência técnica especializada</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moreno Informática - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
