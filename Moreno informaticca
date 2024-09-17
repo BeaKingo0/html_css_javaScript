@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .produto img {
-    max-width: 100%;
+    max-width: 1000%;
     height: auto;
     margin-bottom: 15px;
 }
@@ -183,55 +183,96 @@ footer {
         <div class="produtos-grid">
             <div class="produto">
                 <h3>Placa de Vídeo</h3>
-                <p>Modelos modernos com alta performance</p>
+			<p>Modelos modernos com alta performance</p>
+	<img src="html/imagens/placa-de-video-gigabyte-geforce-
+	gtx-1650-d6-oc-4gb-gddr6-128bit-gv-n1656oc-4gd_96626.webp" 
+	alt="GeForce Gtx 1650"
+	width="210" height="210"
+	 />
+ 
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 
                 <h3>Processadores</h3>
-                <p>Os melhores processadores do mercado</p>
+		<p>Os melhores processadores do mercado</p>
+	<img src="html/imagens/27522624b8830ead884a16ff9789b10a.webp"
+	alt="AMD Ryzen 9 7950x"
+	width="208" height="208"
+		/>
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 
                 <h3>Memória RAM</h3>
-                <p>Velocidade e eficiência garantida</p>
+                <p>Velocidade e eficiência garantida</p><br><br><br>
+		<img src="html/imagens/FuryKingston.webp"
+		alt="Mémoria ram kingston fury"
+		width="230" height="230"
+		/><img src="html/imagens/FuryKingstonRGB.webp"
+		alt="Mémoria ram kingston fury rgb"
+		width="210" height="210"
+		/> 
                 <button>Comprar</button>
             </div>
             <div class="produto">
                
                 <h3>HD</h3>
                 <p>Armazenamento confiável para seus dados</p>
+		<img src="html/imagens/BarracudaHd.webp"
+		alt="Hard Disk Barracuda 1TB"
+		width="142" height="142"
+		/>
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 
                 <h3>SSD</h3>
                 <p>Velocidade de leitura e escrita incomparável</p>
+		<img src="html/imagens/SsdGigabyte.webp"
+		alt="Ssd Aorus 1TB M.2 Gen4"
+		width="204" height="204"
+		/>
                 <button>Comprar</button>
             </div>
             <div class="produto">
                
                 <h3>Placa Mãe</h3>
                 <p>Conectividade e expansão sem limites</p>
+		<img src="html/imagens/PlacaMãeB650i.webp"
+		alt="Placa Mãe Gigabyte B650i Aorus Ultra Wifi Am5 Ddr5 Mini-itx Cor Preto"
+		width="220" height="220"
+		/>
                 <button>Comprar</button>
             </div>
            <div class="produto">
                
                 <h3>Coolers</h3>
-                <p>Refrigeramento de qualidade e de alta performance</p>
+                <p>Refrigeramento de qualidade e de alta performance</p><br><br><br>
+		<img src="html/imagens/CoolerCorsair.webp"
+		alt="Water Cooler Corsair H150i Rgb Elite, 360mm, Intel-amd, Cw-9"
+		width="200" height="220"
+		/>
                 <button>Comprar</button>
             </div>
           <div class="produto">
                
                 <h3>Gabinetes</h3>
                 <p>Os mais resistentes gabinetes do mercado</p>
+		<img src="html/imagens/GabineteRedragon.webp"
+		alt="Gabinete Gamer Atx Redragon Ca-601b Reflect Mid Tower Preto"
+		width="108" height="120"
+		/>
                 <button>Comprar</button>
             </div>
           <div class="produto">
                
                 <h3>Consoles</h3>
                 <p>Consoles playstation <br>e Xbox</p>
+		<img src="html/imagens/Ps5.webp"
+		alt="Console Mídia Física Com God Of War Ragnarok Playstation 5 Cor Branco"
+		width="164" height="180"
+		/>
                 <button>Comprar</button>
           </div>
            
