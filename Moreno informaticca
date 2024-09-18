@@ -205,7 +205,7 @@
             <div class="produto">
                 <h3>Placa de Vídeo</h3>
                 <p>Modelos modernos com alta performance</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/4090.jfif" alt="GeForce GTX 1650" />
+                <img src="C:\Users\Professor\Documents\html\imagens/4090asus.jpeg" alt="Rtx 4090 Asus gaming" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
@@ -254,6 +254,24 @@
                 <h3>Consoles</h3>
                 <p>Consoles PlayStation, Xbox e jogos para você </p>
                 <img src="C:\Users\Professor\Documents\html\imagens/Ps5gow.jfif" alt="Console PS5" />
+                <button>Comprar</button>
+            </div>
+ 	    <div class="produto">
+                <h3>Notebook</h3>
+                <p>Melhores e mais rápidos notebooks do mercado</p>
+                <img src="C:\Users\Professor\Documents\html\imagens/alien.webp" alt="Notebook Alienware" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Periféricos</h3>
+                <p>Os periféricos certos para seu computador</p>
+                <img src="C:\Users\Professor\Documents\html\imagens/periferico.jfif" alt="Kit periféricos gamer" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Notebook</h3>
+                <p>As fontes com os melhores desempenhos energeticos</p>
+                <img src="C:\Users\Professor\Documents\html\imagens/fonterog.jpeg" alt="Fonte ASUS ROG Thor 1600T" />
                 <button>Comprar</button>
             </div>
         </div>
