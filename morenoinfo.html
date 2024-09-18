@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moreno Informática</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .banner {
+            background-image: url('https://example.com/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #produtos {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #produtos h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .produto {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .produto:hover {
+            transform: translateY(-5px);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 200px; /* Altura fixa para uniformidade */
+            object-fit: cover; /* Para manter a proporção da imagem */
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .produto h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+
+        .produto p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .produto button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .produto button:hover {
+            background-color: #e6b800;
+        }
+
+        #contato {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #contato h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        #contato form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contato input,
+        #contato textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        #contato button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contato button:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Moreno Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Bem-vindo à Moreno Informática</h2>
+            <p>Sua loja de confiança para hardware de qualidade</p>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <h3>Placa de Vídeo</h3>
+                <p>Modelos modernos com alta performance</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" 
+		alt="Rtx 4090 Asus gaming" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Processadores</h3>
+                <p>Os melhores processadores do mercado</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" 
+		alt="AMD Ryzen 9 7950x" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Memória RAM</h3>
+                <p>Velocidade e eficiência garantida para seu computador</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/fury.jpg" 
+		alt="Memória RAM Kingston Fury" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>HD's</h3>
+                <p>Armazenamento confiável para seus dados</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/barracuda.jpg" 
+		alt="Hard Disk Barracuda 1TB" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>SSD's</h3>
+                <p>Velocidade de leitura e escrita incomparável</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/ssd.jpg" 
+		alt="SSD Aorus 1TB M.2 Gen4" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Placa Mãe</h3>
+                <p>Conectividade e expansão sem limites</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" 
+		alt="Placa Mãe Gigabyte B650i" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Coolers</h3>
+                <p>Refrigeramento de qualidade e de alta performance</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/h150i.jpg" 
+		alt="Water Cooler Corsair H150i" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Gabinetes</h3>
+                <p>Os mais resistentes gabinetes do mercado</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/redragon.jpg" 
+		alt="Gabinete Gamer Redragon" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Consoles</h3>
+                <p>Consoles PlayStation, Xbox e jogos para você </p>
+                <img src="C:\Users\autologon\Documents\html\imagens/Ps5.jpg" 
+		alt="Console PS5" />
+                <button>Comprar</button>
+            </div>
+ 	    <div class="produto">
+                <h3>Notebook</h3>
+                <p>Melhores e mais rápidos notebooks do mercado</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/alien.webp" 
+		alt="Notebook Alienware" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Periféricos</h3>
+                <p>Os periféricos certos para seu computador</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/periferico.jpg" 
+		alt="Kit periféricos gamer" />
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <h3>Fontes</h3>
+                <p>As fontes com os melhores desempenhos energeticos</p>
+                <img src="C:\Users\autologon\Documents\html\imagens/fonterog.jpg" 	
+		alt="Fonte ASUS ROG Thor 1600T" />
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moreno Informática - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
