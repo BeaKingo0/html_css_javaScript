@@ -176,6 +176,63 @@
             padding: 1rem;
             text-align: center;
         }
+	.catalogo {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .catalogo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .produto-catalogo {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .produto-catalogo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .produto-catalogo h3 {
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        .produto-catalogo p {
+            margin-bottom: 10px;
+        }
+
+        .produto-catalogo .preco {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+	.catalogo {
+   	padding: 2rem;
+    	text-align: center;
+    	margin-top: 50px; /* Espaço entre as seções */
+	}
+	.catalogo::before {
+   	content: "";
+    	display: block;
+    	width: 80%;
+    	height: 2px;
+   	background-color: #ffcc00; /* Cor da linha */
+    	margin: 50px auto; /* Espaço entre as seções */
+}
+
+
     </style>
 </head>
 <body>
@@ -205,78 +262,130 @@
             <div class="produto">
                 <h3>Placa de Vídeo</h3>
                 <p>Modelos modernos com alta performance</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/4090asus.jpeg" alt="Rtx 4090 Asus gaming" />
+                <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" 
+		alt="Rtx 4090 Asus gaming" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Processadores</h3>
                 <p>Os melhores processadores do mercado</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/AmdRyzen.jfif" alt="AMD Ryzen 9 7950x" />
+                <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" 
+		alt="AMD Ryzen 9 7950x" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Memória RAM</h3>
                 <p>Velocidade e eficiência garantida para seu computador</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/fury.jfif" alt="Memória RAM Kingston Fury" />
+                <img src="C:\Users\autologon\Documents\html\imagens/fury.jpg" 
+		alt="Memória RAM Kingston Fury" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>HD's</h3>
                 <p>Armazenamento confiável para seus dados</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/barracuda.jpg" alt="Hard Disk Barracuda 1TB" />
+                <img src="C:\Users\autologon\Documents\html\imagens/barracuda.jpg" 
+		alt="Hard Disk Barracuda 1TB" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>SSD's</h3>
                 <p>Velocidade de leitura e escrita incomparável</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/ssd1tb.jpg" alt="SSD Aorus 1TB M.2 Gen4" />
+                <img src="C:\Users\autologon\Documents\html\imagens/ssd.jpg" 
+		alt="SSD Aorus 1TB M.2 Gen4" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Placa Mãe</h3>
                 <p>Conectividade e expansão sem limites</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/b650i.jfif" alt="Placa Mãe Gigabyte B650i" />
-                <button>Comprar</button>
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" 
+		alt="Placa Mãe Gigabyte B650i" />
+                <button><a href="#catalogo-placa-mae">Comprar</a></button>
             </div>
             <div class="produto">
                 <h3>Coolers</h3>
                 <p>Refrigeramento de qualidade e de alta performance</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/h150i.jfif" alt="Water Cooler Corsair H150i" />
+                <img src="C:\Users\autologon\Documents\html\imagens/h150i.jpg" 
+		alt="Water Cooler Corsair H150i" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Gabinetes</h3>
                 <p>Os mais resistentes gabinetes do mercado</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/redragon.jfif" alt="Gabinete Gamer Redragon" />
+                <img src="C:\Users\autologon\Documents\html\imagens/redragon.jpg" 
+		alt="Gabinete Gamer Redragon" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Consoles</h3>
                 <p>Consoles PlayStation, Xbox e jogos para você </p>
-                <img src="C:\Users\Professor\Documents\html\imagens/Ps5gow.jfif" alt="Console PS5" />
+                <img src="C:\Users\autologon\Documents\html\imagens/Ps5.jpg" 
+		alt="Console PS5" />
                 <button>Comprar</button>
             </div>
  	    <div class="produto">
                 <h3>Notebook</h3>
                 <p>Melhores e mais rápidos notebooks do mercado</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/alien.webp" alt="Notebook Alienware" />
+                <img src="C:\Users\autologon\Documents\html\imagens/alien.webp" 
+		alt="Notebook Alienware" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
                 <h3>Periféricos</h3>
                 <p>Os periféricos certos para seu computador</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/periferico.jfif" alt="Kit periféricos gamer" />
+                <img src="C:\Users\autologon\Documents\html\imagens/periferico.jpg" 
+		alt="Kit periféricos gamer" />
                 <button>Comprar</button>
             </div>
             <div class="produto">
-                <h3>Notebook</h3>
+                <h3>Fontes</h3>
                 <p>As fontes com os melhores desempenhos energeticos</p>
-                <img src="C:\Users\Professor\Documents\html\imagens/fonterog.jpeg" alt="Fonte ASUS ROG Thor 1600T" />
+                <img src="C:\Users\autologon\Documents\html\imagens/fonterog.jpg" 	
+		alt="Fonte ASUS ROG Thor 1600T" />
                 <button>Comprar</button>
             </div>
         </div>
     </section>
-
+	<section id="catalogo-placa-mae" class="catalogo">
+        <h2>Placas Mãe</h2>
+        <div class="catalogo-grid">
+            <div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
+                <h3>Placa Mãe 1</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.200,00</p>
+            </div>
+            <div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 2">
+                <h3>Placa Mãe 2</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.300,00</p>
+            </div>
+            <div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 3">
+                <h3>Placa Mãe 3</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.400,00</p>
+            </div>
+            <div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 4">
+                <h3>Placa Mãe 4</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.500,00</p>
+            </div>
+            <div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 5">
+                <h3>Placa Mãe 5</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.600,00</p>
+            </div>
+		<div class="produto-catalogo">
+                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 5">
+                <h3>Placa Mãe 5</h3>
+                <p>Descrição breve do produto</p>
+                <p class="preco">R$ 1.600,00</p>
+            </div>
+        </div>
+    </section>
     <section id="contato">
         <h2>Contato</h2>
         <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
@@ -293,3 +402,4 @@
     </footer>
 </body>
 </html>
+
