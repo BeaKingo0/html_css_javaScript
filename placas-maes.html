@@ -11,6 +11,7 @@
             color: #f0f0f0;
             padding: 2rem;
         }
+
         .container {
             max-width: 800px;
             margin: auto;
@@ -18,18 +19,22 @@
             padding: 20px;
             border-radius: 10px;
         }
+
         h1 {
             color: #ffcc00;
         }
+
         img {
             width: 100%;
             height: auto;
             border-radius: 5px;
         }
+
         .preco {
             font-size: 1.5rem;
             color: #ffcc00;
         }
+
         button {
             background-color: #ffcc00;
             color: #000;
@@ -38,40 +43,126 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         button:hover {
             background-color: #e6b800;
         }
-	.produtos-grid {
-  	  display: grid;
-    	grid-template-columns: repeat(3, 1fr); /* Três colunas */
-    	gap: 20px; /* Espaço entre as caixas */
-    	margin-top: 20px; /* Espaço acima da grade */
-	}
 
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Três colunas */
+            gap: 20px; /* Espaço entre as caixas */
+            margin-top: 20px; /* Espaço acima da grade */
+        }
+
+        .produto {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 200px; /* Ajuste conforme necessário */
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .produto h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+
+        .produto p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .produto .preco {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .produto .preco-info {
+            margin-bottom: 15px;
+        }
+
+        .produto .preco-avista,
+        .produto .preco-parcelado {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .produto .preco-parcelado {
+            color: #ffcc00;
+        }
+
+        .produto button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .produto button:hover {
+            background-color: #e6b800;
+        }
     </style>
 </head>
 <body>
+
 <div class="categoria" id="placas-maes">
     <h3>Placas Mães</h3>
     <div class="produtos-grid">
-        <div class="produto" data-nome="PLaca Mãe ASUS ROG Strix B550-F">
-            <h3>B550-F</h3>
-            <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Placa Mãe ASUS ROG Strix B550-F">
+        <div class="produto" data-nome="B550M">
+            <h3>Placa Mãe Gigabyte B550M</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Placa Mãe Gigabyte B550M">
+            <div class="preco-info">
+                <p class="preco-avista">À vista: R$ 9.500,00</p>
+                <p class="preco-parcelado">10x de R$ 1.000,00 no cartão</p>
+            </div>
             <button onclick="window.location.href='placas-maes.html'">Comprar</button>
         </div>
-        <div class="produto" data-nome="Placa Mãe MSI MAG B550 Tomahawk">
-            <h3>B550 Tomahawk</h3>
-            <img src="C:\Users\autologon\Documents\html\imagens/rx580.jpg" alt="Placa Mãe MSI MAG B550 Tomahawk">
-            <button onclick="window.location.href='placa-maes.html'">Comprar</button>
+        
+        <div class="produto" data-nome="B550M">
+            <h3>Placa Mãe Gigabyte B550M</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Placa Mãe Gigabyte B550M">
+            <div class="preco-info">
+                <p class="preco-avista">À vista: R$ 9.500,00</p>
+                <p class="preco-parcelado">10x de R$ 1.000,00 no cartão</p>
+            </div>
+            <button onclick="window.location.href='placas-maes.html'">Comprar</button>
         </div>
-        <div class="produto" data-nome="Placa Mãe Gigabyte B450M">
-            <h3>B450M AMD</h3>
-            <img src="C:\Users\autologon\Documents\html\imagens/rx6600.jpg" alt="Placa Mãe Gigabyte B450M">
-            <button onclick="window.location.href='placa-maes.html'">Comprar</button>
+        
+        <div class="produto" data-nome="B550M">
+            <h3>Placa Mãe Gigabyte B550M</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Placa Mãe Gigabyte B550M">
+            <div class="preco-info">
+                <p class="preco-avista">À vista: R$ 9.500,00</p>
+                <p class="preco-parcelado">10x de R$ 1.000,00 no cartão</p>
+            </div>
+            <button onclick="window.location.href='placas-maes.html'">Comprar</button>
         </div>
     </div>
 </div>
 
-    </div>
 </body>
 </html>
