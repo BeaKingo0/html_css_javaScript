@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa de Vídeo - Moreno Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #ffcc00;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .preco {
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+	.produtos-grid {
+  	  display: grid;
+    	grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    	gap: 20px; /* Espaço entre as caixas */
+    	margin-top: 20px; /* Espaço acima da grade */
+	}
+
+    </style>
+</head>
+<body>
+<div class="categoria" id="placas-de-video">
+    <h3>Placas de Vídeo</h3>
+    <div class="produtos-grid">
+        <div class="produto" data-nome="RTX 4090">
+            <h3>RTX 4090</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="RTX 4090 Asus Gaming">
+            <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
+        </div>
+        <div class="produto" data-nome="RX 580">
+            <h3>RX 580</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/rx580.jpg" alt="RX 580">
+            <button onclick="window.location.href='produto-rx580.html'">Comprar</button>
+        </div>
+        <div class="produto" data-nome="RX 6600">
+            <h3>RX 6600</h3>
+            <img src="C:\Users\autologon\Documents\html\imagens/rx6600.jpg" alt="RX 6600">
+            <button onclick="window.location.href='produto-rx6600.html'">Comprar</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
