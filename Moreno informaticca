@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moreno Informática</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilos CSS -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,18 +19,33 @@
             color: #fff;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        header .logo h1 {
-            font-size: 2.5rem;
+        .logo h1 {
+            font-size: 2rem;
             margin: 0;
+        }
+
+        .search-bar {
+            margin: 0 20px;
+            flex-grow: 1;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
-            margin-top: 10px;
+            justify-content: flex-end;
+            margin: 0;
             padding: 0;
         }
 
@@ -48,38 +64,22 @@
             color: #ffcc00;
         }
 
-        .banner {
-            background-image: url('https://example.com/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .banner h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        #produtos {
+        .destaques {
             padding: 2rem;
             text-align: center;
+            background-color: #222;
         }
 
-        #produtos h2 {
+        .destaques h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #ffcc00;
         }
 
-        .produtos-grid {
+        .destaques .produtos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         .produto {
@@ -92,13 +92,13 @@
         }
 
         .produto:hover {
-            transform: translateY(-5px);
+            transform: scale(1.05);
         }
 
         .produto img {
             width: 100%;
-            height: 200px; /* Altura fixa para uniformidade */
-            object-fit: cover; /* Para manter a proporção da imagem */
+            height: 550px;
+            object-fit: cover;
             border-radius: 5px;
             margin-bottom: 20px;
         }
@@ -129,6 +129,27 @@
             background-color: #e6b800;
         }
 
+        #catalogo {
+            padding: 2rem;
+            background-color: #222;
+        }
+
+        .categoria {
+            margin-bottom: 2rem;
+        }
+
+        .categoria h3 {
+            font-size: 2rem;
+            color: #ffcc00;
+            margin-bottom: 1rem;
+        }
+
+        .categoria .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
         #contato {
             background-color: #000;
             color: #fff;
@@ -136,103 +157,17 @@
             text-align: center;
         }
 
-        #contato h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-
-        #contato form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        #contato input,
-        #contato textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            background-color: #444;
-            color: #fff;
-        }
-
-        #contato button {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #contato button:hover {
-            background-color: #e6b800;
-        }
-
         footer {
             background-color: #222;
             color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-	.catalogo {
             padding: 2rem;
             text-align: center;
         }
 
-        .catalogo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .produto-catalogo {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-
-        .produto-catalogo img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        .produto-catalogo h3 {
-            font-size: 1.5rem;
+        footer a {
             color: #ffcc00;
+            text-decoration: none;
         }
-
-        .produto-catalogo p {
-            margin-bottom: 10px;
-        }
-
-        .produto-catalogo .preco {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #ffcc00;
-        }
-	.catalogo {
-   	padding: 2rem;
-    	text-align: center;
-    	margin-top: 50px; /* Espaço entre as seções */
-	}
-	.catalogo::before {
-   	content: "";
-    	display: block;
-    	width: 80%;
-    	height: 2px;
-   	background-color: #ffcc00; /* Cor da linha */
-    	margin: 50px auto; /* Espaço entre as seções */
-}
-
-
     </style>
 </head>
 <body>
@@ -240,689 +175,73 @@
         <div class="logo">
             <h1>Moreno Informática</h1>
         </div>
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="O que você está procurando?" onkeyup="buscarProduto()">
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <div class="banner">
-            <h2>Bem-vindo à Moreno Informática</h2>
-            <p>Sua loja de confiança para hardware de qualidade</p>
+    <section class="destaques" id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="categoria" id="processadores">
+            <h3>Processadores</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Processador AMD Ryzen 9 7950x">
+                    <h3>Processador AMD Ryzen 9 7950x</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" alt="AMD Ryzen 9 7950x">
+                    <button>Comprar</button>
+                </div>
+                <div class="produto" data-nome="Processador Intel Core i9-13900k">
+                    <h3>Processador Intel Core i9-13900k</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/i9.jpg" alt="Intel Core i9-13900k">
+                    <button>Comprar</button>
+                </div>
+            </div>
         </div>
+
+        <div class="categoria" id="placas-mae">
+            <h3>Placas Mãe</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Placa Mãe ASUS ROG Strix B550-F">
+                    <h3>Placa Mãe ASUS ROG Strix B550-F</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/b550.jpg" alt="ASUS ROG Strix B550-F">
+                    <button>Comprar</button>
+                </div>
+                <div class="produto" data-nome="Placa Mãe MSI MAG B550 Tomahawk">
+                    <h3>Placa Mãe MSI MAG B550 Tomahawk</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/tomahawk.jpg" alt="MSI MAG B550 Tomahawk">
+                    <button onclick="window.location.href='placas-maes.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicione mais categorias de produtos aqui, como: HD, SSD, Coolers, Fontes, etc. -->
+<div class="produtos-grid">
+    <div class="produto">
+        <h3>Placa de Vídeo</h3>
+        <p>Modelos modernos com alta performance</p>
+        <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Rtx 4090 Asus gaming">
+        <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
+    </div>
+    <div class="produto">
+        <h3>Processadores</h3>
+        <p>Os melhores processadores do mercado</p>
+        <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" alt="AMD Ryzen 9 7950x">
+        <button onclick="window.location.href='processadores.html'">Comprar</button>
+    </div>
+    <!-- Continue com os demais produtos da mesma forma -->
+</div>
+
     </section>
 
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produtos-grid">
-            <div class="produto">
-                <h3>Placa de Vídeo</h3>
-                <p>Modelos modernos com alta performance</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" 
-		alt="Rtx 4090 Asus gaming" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Processadores</h3>
-                <p>Os melhores processadores do mercado</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" 
-		alt="AMD Ryzen 9 7950x" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Memória RAM</h3>
-                <p>Velocidade e eficiência garantida para seu computador</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/fury.jpg" 
-		alt="Memória RAM Kingston Fury" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>HD's</h3>
-                <p>Armazenamento confiável para seus dados</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/barracuda.jpg" 
-		alt="Hard Disk Barracuda 1TB" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>SSD's</h3>
-                <p>Velocidade de leitura e escrita incomparável</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/ssd.jpg" 
-		alt="SSD Aorus 1TB M.2 Gen4" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Placa Mãe</h3>
-                <p>Conectividade e expansão sem limites</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" 
-		alt="Placa Mãe Gigabyte B650i" />
-                <button><a href="#catalogo-placa-mae">Comprar</a></button>
-            </div>
-            <div class="produto">
-                <h3>Coolers</h3>
-                <p>Refrigeramento de qualidade e de alta performance</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/h150i.jpg" 
-		alt="Water Cooler Corsair H150i" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Gabinetes</h3>
-                <p>Os mais resistentes gabinetes do mercado</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/redragon.jpg" 
-		alt="Gabinete Gamer Redragon" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Consoles</h3>
-                <p>Consoles PlayStation, Xbox e jogos para você </p>
-                <img src="C:\Users\autologon\Documents\html\imagens/Ps5.jpg" 
-		alt="Console PS5" />
-                <button>Comprar</button>
-            </div>
- 	    <div class="produto">
-                <h3>Notebook</h3>
-                <p>Melhores e mais rápidos notebooks do mercado</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/alien.webp" 
-		alt="Notebook Alienware" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Periféricos</h3>
-                <p>Os periféricos certos para seu computador</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/periferico.jpg" 
-		alt="Kit periféricos gamer" />
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <h3>Fontes</h3>
-                <p>As fontes com os melhores desempenhos energeticos</p>
-                <img src="C:\Users\autologon\Documents\html\imagens/fonterog.jpg" 	
-		alt="Fonte ASUS ROG Thor 1600T" />
-                <button>Comprar</button>
-            </div>
-        </div>
-    </section>
-	<section id="catalogo-placa-mae" class="catalogo">
-        <h2>Placas Mãe</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa Mãe 1</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 2">
-                <h3>Placa Mãe 2</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.300,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 3">
-                <h3>Placa Mãe 3</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.400,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 4">
-                <h3>Placa Mãe 4</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.500,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 5">
-                <h3>Placa Mãe 5</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.600,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 5">
-                <h3>Placa Mãe 5</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.600,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="processadores" class="catalogo">
-        <h2>Processadores</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Processador</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Placas de video" class="catalogo">
-        <h2>Placas de video</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Placa de video</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Memória Ram" class="catalogo">
-        <h2>Memórias Ram</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Memória Ram</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Hard disk" class="catalogo">
-        <h2>HD's</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Hard Disk</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Ssd" class="catalogo">
-        <h2>Ssd's</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>SSD</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Cooler" class="catalogo">
-        <h2>Coolers</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Cooler</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Gabinete" class="catalogo">
-        <h2>Gabinetes</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Gabinete</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Fonte" class="catalogo">
-        <h2>Fontes</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Fonte" class="catalogo">
-        <h2>Fontes</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Fonte</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Periferico" class="catalogo">
-        <h2>Perifericos</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>---</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
-    </section>
-	<section id="Notebook" class="catalogo">
-        <h2>Notebook's</h2>
-        <div class="catalogo-grid">
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-            <div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-		<div class="produto-catalogo">
-                <img src="C:\Users\autologon\Documents\html\imagens/b650i.jpg" alt="Placa Mãe 1">
-                <h3>Notebook</h3>
-                <p>Descrição breve do produto</p>
-                <p class="preco">R$ 1.200,00</p>
-		<button>Comprar</button>
-            </div>
-        </div>
-    </section>
     <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
         <form>
             <input type="text" placeholder="Seu nome" required>
             <input type="email" placeholder="Seu email" required>
@@ -932,8 +251,25 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Moreno Informática - Todos os direitos reservados</p>
+        <p>&copy; 2024 Moreno Informática. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Código JavaScript -->
+    <script>
+        function buscarProduto() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const produtos = document.querySelectorAll('.produto');
+
+            produtos.forEach(produto => {
+                const nomeProduto = produto.getAttribute('data-nome').toLowerCase();
+
+                if (nomeProduto.includes(searchInput)) {
+                    produto.style.display = 'block';
+                } else {
+                    produto.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
-
