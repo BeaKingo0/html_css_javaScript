@@ -195,12 +195,12 @@
                 <div class="produto" data-nome="Processador AMD Ryzen 9 7950x">
                     <h3>Processador AMD Ryzen 9 7950x</h3>
                     <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" alt="AMD Ryzen 9 7950x">
-                    <button>Comprar</button>
+                    <button onclick="window.location.href='processadores.html'">Comprar</button>
                 </div>
                 <div class="produto" data-nome="Processador Intel Core i9-13900k">
                     <h3>Processador Intel Core i9-13900k</h3>
                     <img src="C:\Users\autologon\Documents\html\imagens/i9.jpg" alt="Intel Core i9-13900k">
-                    <button>Comprar</button>
+                    <button onclick="window.location.href='processadores.html'">Comprar</button>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                 <div class="produto" data-nome="Placa Mãe ASUS ROG Strix B550-F">
                     <h3>Placa Mãe ASUS ROG Strix B550-F</h3>
                     <img src="C:\Users\autologon\Documents\html\imagens/b550.jpg" alt="ASUS ROG Strix B550-F">
-                    <button>Comprar</button>
+                    <button onclick="window.location.href='placas-maes.html'">Comprar</button>
                 </div>
                 <div class="produto" data-nome="Placa Mãe MSI MAG B550 Tomahawk">
                     <h3>Placa Mãe MSI MAG B550 Tomahawk</h3>
