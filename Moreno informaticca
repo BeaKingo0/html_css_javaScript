@@ -351,18 +351,18 @@
             </div>
         </div>
 
-	<div class="categoria" id="notebooks">
-            <h3>Notebooks</h3>
+	<div class="categoria" id="computador">
+            <h3>Computadores</h3>
             <div class="produtos-grid">
-                <div class="produto" data-nome="Notebooks">
-                    <h3>Notebook Asus</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Notebook Asus">
-                    <button onclick="window.location.href='notebooks.html'">Comprar</button>
+                <div class="produto" data-nome="Computadores">
+                    <h3>Computador Ryzen</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Computador Ryzen">
+                    <button onclick="window.location.href='computadores.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Notebooks">
-                    <h3>Notebook Asus</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Notebook Asus">
-                    <button onclick="window.location.href='notebooks.html'">Comprar</button>
+                <div class="produto" data-nome="Computadores">
+                    <h3>Computador Intel</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Computador Intel">
+                    <button onclick="window.location.href='computadores.html'">Comprar</button>
                 </div>
             </div>
         </div>
