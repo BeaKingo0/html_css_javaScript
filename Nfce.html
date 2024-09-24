@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovante Fiscal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .comprovante-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #555;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .dados-cliente, .dados-produto, .dados-pagamento {
+            margin-bottom: 20px;
+        }
+
+        .comprovante-container button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comprovante-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="comprovante-container">
+    <h2>Comprovante Fiscal</h2>
+
+    <div class="dados-cliente">
+        <h3>Dados do Cliente</h3>
+        <p><strong>Nome:</strong> <span id="nome"></span></p>
+        <p><strong>CPF:</strong> <span id="cpf"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Telefone:</strong> <span id="telefone"></span></p>
+        <p><strong>Sexo:</strong> <span id="sexo"></span></p>
+        <p><strong>Data de Nascimento:</strong> <span id="dataNascimento"></span></p>
+    </div>
+
+    <div class="dados-produto">
+        <h3>Dados do Produto</h3>
+        <p><strong>Produto:</strong> <span id="produto"></span></p>
+        <p><strong>Valor Total:</strong> R$ <span id="valorTotal"></span></p>
+    </div>
+
+    <div class="dados-pagamento">
+        <h3>Formas de Pagamento</h3>
+        <p><strong>Forma de Pagamento:</strong> <span id="parcelas"></span>x</p>
+        <p><strong>Valor das Parcelas:</strong> R$ <span id="valorParcela"></span></p>
+    </div>
+
+    <button onclick="window.print()">Imprimir Comprovante</button>
+</div>
+
+<script>
+    // Recuperar os dados do localStorage e exibi-los
+    document.getElementById('nome').textContent = localStorage.getItem('nome');
+    document.getElementById('email').textContent = localStorage.getItem('email');
+    document.getElementById('cpf').textContent = localStorage.getItem('cpf');
+    document.getElementById('telefone').textContent = localStorage.getItem('telefone');
+    document.getElementById('sexo').textContent = localStorage.getItem('sexo');
+    document.getElementById('dataNascimento').textContent = localStorage.getItem('dataNascimento');
+    document.getElementById('produto').textContent = localStorage.getItem('produto');
+    document.getElementById('valorTotal').textContent = localStorage.getItem('valorTotal');
+    document.getElementById('parcelas').textContent = localStorage.getItem('parcelas');
+    document.getElementById('valorParcela').textContent = localStorage.getItem('valorParcela');
+</script>
+
+</body>
+</html>
