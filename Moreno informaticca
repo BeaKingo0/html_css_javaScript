@@ -222,23 +222,152 @@
         </div>
 
         <!-- Adicione mais categorias de produtos aqui, como: HD, SSD, Coolers, Fontes, etc. -->
-<div class="produtos-grid">
-    <div class="produto">
-        <h3>Placa de Vídeo</h3>
-        <p>Modelos modernos com alta performance</p>
-        <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Rtx 4090 Asus gaming">
-        <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
-    </div>
-    <div class="produto">
-        <h3>Processadores</h3>
-        <p>Os melhores processadores do mercado</p>
-        <img src="C:\Users\autologon\Documents\html\imagens/ryzen.jpg" alt="AMD Ryzen 9 7950x">
-        <button onclick="window.location.href='processadores.html'">Comprar</button>
-    </div>
-    <!-- Continue com os demais produtos da mesma forma -->
-</div>
 
-    </section>
+	<div class="categoria" id="placas-de-video">
+            <h3>Placas de video</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Placa de video RTX 4090">
+                    <h3>Placa De Video RTX 4090</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="RTX 4090">
+                    <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Placa de video RX 6600">
+                    <h3>Placa De Video RX 6600</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/RX6600.jpg" alt="Placa De Video RX 6600">
+                    <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="memoria-ram">
+            <h3>Memórias Ram</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Kingston Fury">
+                    <h3>Memória Ram Kingston Fury</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Memória ram kingston fury">
+                    <button onclick="window.location.href='memorias-ram.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Kingston Fury">
+                    <h3>Memória Ram Kingston Fury</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Memória ram kingston fury">
+                    <button onclick="window.location.href='memorias-ram.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="Hd">
+            <h3>Hard Disk</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Hard Disk Barracuda">
+                    <h3>Hard Disk Barracuda</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Hard Disk Barracuda 1TB">
+                    <button onclick="window.location.href='Hds.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Hard Disk Barracuda">
+                    <h3>Hard Disk Barracuda</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Hard Disk Barracuda 1TB">
+                    <button onclick="window.location.href='Hds.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+		
+	<div class="categoria" id="ssd">
+            <h3>Solid State Disk</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Solid State Disk Kingston">
+                    <h3>Solid State Disk Kingston</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Solid State Disk Kingston 1TB">
+                    <button onclick="window.location.href='ssds.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Solid State Disk Kingston">
+                    <h3>Solid State Disk Kingston</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Solid State Disk Kingston 1TB">
+                    <button onclick="window.location.href='ssds.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="fontes">
+            <h3>Fontes</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Fonte ROG">
+                    <h3>Fonte ROG</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Fonte ROG 900w">
+                    <button onclick="window.location.href='fontes.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Fonte ROG">
+                    <h3>Fonte ROG</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Fonte ROG 900w">
+                    <button onclick="window.location.href='fontes.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="coolers">
+            <h3>Coolers</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Cooler">
+                    <h3>Cooler</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Cooler">
+                    <button onclick="window.location.href='coolers.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Cooler">
+                    <h3>Cooler</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Cooler">
+                    <button onclick="window.location.href='coolers.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="gabinetes">
+            <h3>Gabinetes</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Gabinete Aquario Redragon">
+                    <h3>Gabinete Redragon Aquario</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Gabinete Redragon Aquario">
+                    <button onclick="window.location.href='gabinetes.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Gabinete Aquario Redragon">
+                    <h3>Gabinete Redragon Aquario</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Gabinete Redragon Aquario">
+                    <button onclick="window.location.href='gabinetes.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="perifericos">
+            <h3>Periféricos</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Periféricos">
+                    <h3>Mouse Logitec</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Mouse Logitec">
+                    <button onclick="window.location.href='perifericos.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Periféricos">
+                    <h3>Mouse Logitec</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Mouse Logitec">
+                    <button onclick="window.location.href='perifericos.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+	<div class="categoria" id="notebooks">
+            <h3>Notebooks</h3>
+            <div class="produtos-grid">
+                <div class="produto" data-nome="Notebooks">
+                    <h3>Notebook Asus</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Notebook Asus">
+                    <button onclick="window.location.href='notebooks.html'">Comprar</button>
+                </div>
+                <div class="produto" data-nome="Notebooks">
+                    <h3>Notebook Asus</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Notebook Asus">
+                    <button onclick="window.location.href='notebooks.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+</section>
 
     <section id="contato">
         <h2>Contato</h2>
