@@ -199,7 +199,7 @@
                 </div>
                 <div class="produto" data-nome="Processador Intel Core i9-13900k">
                     <h3>Processador Intel Core i9-13900k</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/i9.jpg" alt="Intel Core i9-13900k">
+                    <img src="C:\Users\autologon\Documents\html\imagens/i913k.jpg" alt="Intel Core i9-13900k">
                     <button onclick="window.location.href='processadores.html'">Comprar</button>
                 </div>
             </div>
@@ -210,18 +210,17 @@
             <div class="produtos-grid">
                 <div class="produto" data-nome="Placa Mãe ASUS ROG Strix B550-F">
                     <h3>Placa Mãe ASUS ROG Strix B550-F</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/b550.jpg" alt="ASUS ROG Strix B550-F">
+                    <img src="C:\Users\autologon\Documents\html\imagens/placaasus.jpg" alt="ASUS ROG Strix B550-F">
                     <button onclick="window.location.href='placas-maes.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Placa Mãe MSI MAG B550 Tomahawk">
-                    <h3>Placa Mãe MSI MAG B550 Tomahawk</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/tomahawk.jpg" alt="MSI MAG B550 Tomahawk">
+                <div class="produto" data-nome="Placa Mãe Gigabyte B550mk">
+                    <h3>Placa Mãe Gigabyte B550mk</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/b550mk.webp" alt="Placa Mãe Gigabyte B550mk">
                     <button onclick="window.location.href='placas-maes.html'">Comprar</button>
                 </div>
             </div>
         </div>
 
-        <!-- Adicione mais categorias de produtos aqui, como: HD, SSD, Coolers, Fontes, etc. -->
 
 	<div class="categoria" id="placas-de-video">
             <h3>Placas de video</h3>
@@ -231,9 +230,9 @@
                     <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="RTX 4090">
                     <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Placa de video RX 6600">
-                    <h3>Placa De Video RX 6600</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/RX6600.jpg" alt="Placa De Video RX 6600">
+                <div class="produto" data-nome="Placa de video RX 7900 XTX">
+                    <h3>Placa de Vídeo RX 7900 XTX</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/rx7900xtx.jpeg" alt="Placa De Video RX 7900 XTX">
                     <button onclick="window.location.href='placas-de-video.html'">Comprar</button>
                 </div>
             </div>
@@ -244,12 +243,12 @@
             <div class="produtos-grid">
                 <div class="produto" data-nome="Kingston Fury">
                     <h3>Memória Ram Kingston Fury</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Memória ram kingston fury">
+                    <img src="C:\Users\autologon\Documents\html\imagens/fury.jpeg" alt="Memória ram kingston fury">
                     <button onclick="window.location.href='memorias-ram.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Kingston Fury">
-                    <h3>Memória Ram Kingston Fury</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Memória ram kingston fury">
+                <div class="produto" data-nome="Xpg Spectrix">
+                    <h3>Memória RAM XPG Spectrix</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/xpg.jpeg" alt="Memória RAM XPG Spectrix">
                     <button onclick="window.location.href='memorias-ram.html'">Comprar</button>
                 </div>
             </div>
@@ -258,14 +257,14 @@
 	<div class="categoria" id="Hd">
             <h3>Hard Disk</h3>
             <div class="produtos-grid">
-                <div class="produto" data-nome="Hard Disk Barracuda">
-                    <h3>Hard Disk Barracuda</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Hard Disk Barracuda 1TB">
+                <div class="produto" data-nome="HD Seagate 1TB Barracuda">
+                    <h3>HD Seagate Barracuda</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/barracuda.jpeg" alt="HD Seagate 1TB Barracuda">
                     <button onclick="window.location.href='Hds.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Hard Disk Barracuda">
-                    <h3>Hard Disk Barracuda</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Hard Disk Barracuda 1TB">
+                <div class="produto" data-nome="HD WD Red Plus">
+                    <h3>HD WD Red Plus</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/redplus.jpeg" alt="HD WD Red Plus">
                     <button onclick="window.location.href='Hds.html'">Comprar</button>
                 </div>
             </div>
@@ -274,14 +273,14 @@
 	<div class="categoria" id="ssd">
             <h3>Solid State Disk</h3>
             <div class="produtos-grid">
-                <div class="produto" data-nome="Solid State Disk Kingston">
-                    <h3>Solid State Disk Kingston</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Solid State Disk Kingston 1TB">
+                <div class="produto" data-nome="SSD SATA Kingston A400">
+                    <h3>SSD SATA Kingston A400</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/ssdkingston.jpeg" alt="SSD SATA Kingston A400">
                     <button onclick="window.location.href='ssds.html'">Comprar</button>
                 </div>
-                <div class="produto" data-nome="Solid State Disk Kingston">
-                    <h3>Solid State Disk Kingston</h3>
-                    <img src="C:\Users\autologon\Documents\html\imagens/4090.jpg" alt="Solid State Disk Kingston 1TB">
+                <div class="produto" data-nome="SSD SATA Rise Mode Line">
+                    <h3>SSD SATA Rise Mode Line</h3>
+                    <img src="C:\Users\autologon\Documents\html\imagens/rise.jpeg" alt="SSD SATA Rise Mode Line">
                     <button onclick="window.location.href='ssds.html'">Comprar</button>
                 </div>
             </div>
